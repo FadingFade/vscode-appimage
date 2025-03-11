@@ -1,6 +1,9 @@
 name: Build and Release VSCode AppImage
 
 on:
+  schedule:
+  - cron: "0 4 * * *"
+
   workflow_dispatch:
 
 jobs:
